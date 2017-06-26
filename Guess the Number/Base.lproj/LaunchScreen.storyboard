@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue" translatesAutoresizingMaskIntoConstraints="NO" id="aIm-eD-E3l">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GuessMyNumber" translatesAutoresizingMaskIntoConstraints="NO" id="jEx-yE-fcy">
+                                <rect key="frame" x="40" y="182" width="240" height="270"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the Number!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ke-8X-yIg">
+                                <rect key="frame" x="0.0" y="56" width="320" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aIm-eD-E3l" secondAttribute="trailing" id="7t2-dg-vSf"/>
+                            <constraint firstAttribute="bottom" secondItem="aIm-eD-E3l" secondAttribute="bottom" id="AMu-8U-Rzk"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jEx-yE-fcy" secondAttribute="bottom" constant="116" id="HIj-N8-UzT"/>
+                            <constraint firstItem="jEx-yE-fcy" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="162" id="Mod-mV-b0s"/>
+                            <constraint firstItem="6ke-8X-yIg" firstAttribute="centerX" secondItem="jEx-yE-fcy" secondAttribute="centerX" id="YSU-O3-cTA"/>
+                            <constraint firstItem="6ke-8X-yIg" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="36" id="agd-53-3ud"/>
+                            <constraint firstItem="aIm-eD-E3l" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="gGs-kK-yeY"/>
+                            <constraint firstItem="6ke-8X-yIg" firstAttribute="trailing" secondItem="aIm-eD-E3l" secondAttribute="trailing" id="k5E-DE-bmv"/>
+                            <constraint firstItem="jEx-yE-fcy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="24" id="mWn-nd-DPa"/>
+                            <constraint firstItem="6ke-8X-yIg" firstAttribute="leading" secondItem="aIm-eD-E3l" secondAttribute="leading" id="s9h-8x-RSU"/>
+                            <constraint firstItem="jEx-yE-fcy" firstAttribute="top" secondItem="6ke-8X-yIg" secondAttribute="bottom" constant="59" id="sZe-vR-1y5"/>
+                            <constraint firstItem="aIm-eD-E3l" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ywS-9X-EJl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blue" width="414" height="736"/>
+        <image name="GuessMyNumber" width="99" height="98"/>
+    </resources>
+</document>
